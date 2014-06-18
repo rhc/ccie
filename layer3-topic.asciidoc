@@ -1,0 +1,154 @@
+= Layer 3 Technologies
+== Addressing technologies
+=== Identify, IPv4 addressing and sub-netting
+==== Address types, VLSM
+==== ARP
+=== Identify, IPv6 addressing and sub-netting
+==== Unicast, multicast
+==== EUI-64
+==== ND, RS/RA
+==== Autoconfig/SLAAC temporary addresses (RFC4941)
+==== Global prefix configuration feature
+
+== Layer 3 Multicast
+=== Troubleshoot reverse path forwarding
+==== RPF failure
+==== RPF failure with tunnel interface
+
+=== IPv4 protocol independent multicast
+==== PIM dense mode, sparse mode, sparse-dense mode
+==== Static RP, auto-RP, BSR
+==== Bidirectional PIM
+==== Source-specific multicast
+==== Group to RP mapping
+==== Multicast boundary
+=== Multicast source discovery protocol
+==== Intra-domain MSDP (anycast RP)
+==== SA filter
+
+== Fundamental routing concepts
+=== Static routing
+=== Default routing
+=== Compare routing protocol types
+==== distance vector
+==== link state
+==== path vector
+=== Administrative distance
+=== Passive interface
+=== VRF lite
+=== Filtering with any routing protocol
+=== Redistribution between any routing protocol
+=== Manual and auto summarization with any routing protocol
+=== Policy-based routing
+=== Identify and troubleshoot sub-optimal routing
+=== Bidirectional forwarding detection
+=== Loop prevention mechanisms
+==== Route tagging, filtering
+==== Split horizon
+==== Route poisoning
+=== Routing protocol authentication
+==== MD5
+==== key-chain
+==== EIGRP HMAC SHA2-256bit
+==== OSPFv2 SHA1-196bit
+==== OSPFv3 IPsec authentication
+
+== RIP v2
+=== RIPv2
+
+== EIGRP (for IPv4 and IPv6)
+=== Describe packet types
+==== Packet types (hello, query, update, and such)
+==== Route types (internal, external)
+=== Neighbor relationship
+
+==== Multicast, unicast EIGRP peering
+=== Loop free path selection
+
+==== RD, FD, FC, successor, feasible successor
+==== Classic metric
+==== Wide metric
+=== Operations
+==== General operations
+==== Topology table, update, query, active, passive
+==== Stuck in active
+==== Graceful shutdown
+=== EIGRP stub
+==== stub
+==== leak-map
+=== Load-balancing
+==== equal-cost
+==== unequal-cost
+==== add-path
+=== Implement EIGRP (multi-address) named mode
+==== Types of families
+==== IPv4 address-family
+==== IPv6 address-family
+=== Implement, troubleshoot and optimize EIGRP convergence and scalability
+==== Describe fast convergence requirements
+==== Control query boundaries
+==== IP FRR/fast reroute (single hop)
+==== Summary leak-map
+==== Summary metric
+
+== OSPF (v2 and v3)
+=== Describe packet types
+==== LSA types (1, 2, 3, 4, 5, 7, 9)
+==== Route types (N1, N2, E1, E2)
+=== Neighbor relationship
+=== OSPFv3 address-family support
+==== IPv4 address-family
+==== IPv6 address-family
+=== Network types, area types and router types
+==== Point-to-point, multipoint, broadcast, non-broadcast
+==== LSA types, area type: backbone, normal, transit, stub, NSSA, totally
+                                         stub
+==== Internal router, ABR, ASBR
+==== Virtual link
+=== Path preference
+=== Operations
+==== General operations
+==== Graceful shutdown
+==== GTSM (generic TTL security mechanism)
+
+=== Implement, troubleshoot and optimize OSPF convergence and scalability
+==== Metrics
+==== LSA throttling, SPF tuning, fast hello
+==== LSA propagation control (area types, ISPF)
+==== IP FR/fast reroute (single hop)
+==== LFA/loop-free alternative (multi hop)
+==== OSPFv3 prefix suppression
+
+== BGP
+=== Describe, Peer relationships
+==== Peer-group, template
+==== Active, passive
+==== States, timers
+==== Dynamic neighbors
+=== IBGP and EBGP
+==== EBGP, IBGP
+==== 4 bytes AS number
+==== Private AS
+=== Explain attributes and best-path selection
+=== Routing policies
+==== Attribute manipulation
+==== Conditional advertisement
+==== Outbound route filtering
+==== Communities, extended communities
+==== Multi-homing
+=== Scalability
+==== Route-reflector, cluster
+==== Confederations
+==== Aggregation, AS set
+=== Multi-protocol BGP
+==== IPv4, IPv6, VPN address-family
+=== AS path manipulations
+==== Local AS, allow AS in, remove private AS
+==== Prepend
+==== Regexp
+=== Other Features
+==== Multipath
+==== BGP synchronization
+==== Soft reconfiguration, route refresh
+
+

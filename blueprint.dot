@@ -1,0 +1,21 @@
+digraph ccie {  
+  graph [rotate=0, inputscale=72,overlap=prism]
+  edge [arrowhead=none]
+
+  node [style=filled, fillcolor=yellow, width=1, shape=circle]
+  origin [label="CCIE",pos="0,0"]
+
+  node [style=filled, fillcolor=orange, width=1]
+  a [label="Layer2", pos="0,100"]
+  b [label="Layer3", pos="-95.1,30.9"]
+  c [label="VPNs", pos="-58.7,-80.9"]
+  d [label="Security",pos="58.7,-80.9"]
+  e [label="Service",pos="95.1,30.9"]
+
+  a1 [pos = "0,150"]
+
+  origin -> {a b c d e}
+
+
+
+}

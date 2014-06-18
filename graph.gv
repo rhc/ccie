@@ -1,0 +1,628 @@
+digraph {
+graph [ranksep="4",nodesep=2,root="0.2",fontsize=11];
+"0.2" [label="CCIE Routing and Switching", fillcolor=yellow, style=filled, shape= oval ] ;
+"0.2.1" [label="Layer 2 Technologies", fillcolor=orangered, style=filled, shape= ellipse ] ;
+"0.2" -> "0.2.1" 
+ [arrowhead=none]; "0.2.1.1" [label="LAN switching technologies", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.1" -> "0.2.1.1" 
+ [arrowhead=none]; "0.2.1.1.1" [label="Switch administration", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.1.1" -> "0.2.1.1.1" 
+ [arrowhead=none]; "0.2.1.1.1.1" [label="Managing MAC address table", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.1" -> "0.2.1.1.1.1" 
+ [arrowhead=none]; "0.2.1.1.1.2" [label="errdisable recovery", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.1" -> "0.2.1.1.1.2" 
+ [arrowhead=none]; "0.2.1.1.1.3" [label="L2 MTU", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.1" -> "0.2.1.1.1.3" 
+ [arrowhead=none]; "0.2.1.1.2" [label="Layer 2 protocols", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.1.1" -> "0.2.1.1.2" 
+ [arrowhead=none]; "0.2.1.1.2.3" [label="CDP, LLDP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.2" -> "0.2.1.1.2.3" 
+ [arrowhead=none]; "0.2.1.1.2.4" [label="UDLD", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.2" -> "0.2.1.1.2.4" 
+ [arrowhead=none]; "0.2.1.1.3" [label="VLAN", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.1.1" -> "0.2.1.1.3" 
+ [arrowhead=none]; "0.2.1.1.3.4" [label="access ports", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.3" -> "0.2.1.1.3.4" 
+ [arrowhead=none]; "0.2.1.1.3.5" [label="VLAN database", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.3" -> "0.2.1.1.3.5" 
+ [arrowhead=none]; "0.2.1.1.3.6" [label="normal, extended VLAN, voice VLAN", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.3" -> "0.2.1.1.3.6" 
+ [arrowhead=none]; "0.2.1.1.4" [label="Trunking", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.1.1" -> "0.2.1.1.4" 
+ [arrowhead=none]; "0.2.1.1.4.6" [label="VTPv1, VTPv2, VTPv3, VTP pruning", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.4" -> "0.2.1.1.4.6" 
+ [arrowhead=none]; "0.2.1.1.4.7" [label="dot1Q", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.4" -> "0.2.1.1.4.7" 
+ [arrowhead=none]; "0.2.1.1.4.8" [label="Native VLAN", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.4" -> "0.2.1.1.4.8" 
+ [arrowhead=none]; "0.2.1.1.4.9" [label="Manual pruning", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.4" -> "0.2.1.1.4.9" 
+ [arrowhead=none]; "0.2.1.1.5" [label="Etherchannel", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.1.1" -> "0.2.1.1.5" 
+ [arrowhead=none]; "0.2.1.1.5.9" [label="LACP, PAgP, manual", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.5" -> "0.2.1.1.5.9" 
+ [arrowhead=none]; "0.2.1.1.5.10" [label="layer 2, layer 3", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.5" -> "0.2.1.1.5.10" 
+ [arrowhead=none]; "0.2.1.1.5.11" [label="load-balancing", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.5" -> "0.2.1.1.5.11" 
+ [arrowhead=none]; "0.2.1.1.5.12" [label="etherchannel misconfiguration guard", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.5" -> "0.2.1.1.5.12" 
+ [arrowhead=none]; "0.2.1.1.6" [label="Spanning-tree", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.1.1" -> "0.2.1.1.6" 
+ [arrowhead=none]; "0.2.1.1.6.12" [label="PVST+/RPVST+/MST", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.6" -> "0.2.1.1.6.12" 
+ [arrowhead=none]; "0.2.1.1.6.13" [label="switch priority, port priority, path cost, STP timers", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.6" -> "0.2.1.1.6.13" 
+ [arrowhead=none]; "0.2.1.1.6.14" [label="port fast, BPDUguard, BPDUfilter", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.6" -> "0.2.1.1.6.14" 
+ [arrowhead=none]; "0.2.1.1.6.15" [label="loopguard, rootguard", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.6" -> "0.2.1.1.6.15" 
+ [arrowhead=none]; "0.2.1.1.7" [label="Other LAN switching technologies", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.1.1" -> "0.2.1.1.7" 
+ [arrowhead=none]; "0.2.1.1.7.15" [label="SPAN, RSPAN, ERSPAN", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.1.7" -> "0.2.1.1.7.15" 
+ [arrowhead=none]; "0.2.1.2" [label="Layer 2 Multicast", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.1" -> "0.2.1.2" 
+ [arrowhead=none]; "0.2.1.2.7" [label="IGMP", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.1.2" -> "0.2.1.2.7" 
+ [arrowhead=none]; "0.2.1.2.7.15" [label="IGMPv1, IGMPv2, IGMPv3", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.2.7" -> "0.2.1.2.7.15" 
+ [arrowhead=none]; "0.2.1.2.7.16" [label="IGMP snooping", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.2.7" -> "0.2.1.2.7.16" 
+ [arrowhead=none]; "0.2.1.2.7.17" [label="IGMP querier", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.2.7" -> "0.2.1.2.7.17" 
+ [arrowhead=none]; "0.2.1.2.7.18" [label="IGMP filter", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.2.7" -> "0.2.1.2.7.18" 
+ [arrowhead=none]; "0.2.1.2.7.19" [label="IGMP proxy", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.2.7" -> "0.2.1.2.7.19" 
+ [arrowhead=none]; "0.2.1.3" [label="Layer 2 WAN circuit technologies", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.1" -> "0.2.1.3" 
+ [arrowhead=none]; "0.2.1.3.7" [label="HDLC", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.1.3" -> "0.2.1.3.7" 
+ [arrowhead=none]; "0.2.1.3.8" [label="PPP", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.1.3" -> "0.2.1.3.8" 
+ [arrowhead=none]; "0.2.1.3.8.19" [label="authentication (PAP, CHAP)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.3.8" -> "0.2.1.3.8.19" 
+ [arrowhead=none]; "0.2.1.3.8.20" [label="PPPoE", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.3.8" -> "0.2.1.3.8.20" 
+ [arrowhead=none]; "0.2.1.3.8.21" [label="MLPPP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.1.3.8" -> "0.2.1.3.8.21" 
+ [arrowhead=none]; "0.2.2" [label="Layer 3 Technologies", fillcolor=orangered, style=filled, shape= ellipse ] ;
+"0.2" -> "0.2.2" 
+ [arrowhead=none]; "0.2.2.3" [label="Addressing technologies", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.2" -> "0.2.2.3" 
+ [arrowhead=none]; "0.2.2.3.8" [label="Identify, IPv4 addressing and sub-netting", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.3" -> "0.2.2.3.8" 
+ [arrowhead=none]; "0.2.2.3.8.21" [label="Address types, VLSM", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.3.8" -> "0.2.2.3.8.21" 
+ [arrowhead=none]; "0.2.2.3.8.22" [label="ARP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.3.8" -> "0.2.2.3.8.22" 
+ [arrowhead=none]; "0.2.2.3.9" [label="Identify, IPv6 addressing and sub-netting", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.3" -> "0.2.2.3.9" 
+ [arrowhead=none]; "0.2.2.3.9.22" [label="Unicast, multicast", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.3.9" -> "0.2.2.3.9.22" 
+ [arrowhead=none]; "0.2.2.3.9.23" [label="EUI-64", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.3.9" -> "0.2.2.3.9.23" 
+ [arrowhead=none]; "0.2.2.3.9.24" [label="ND, RS/RA", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.3.9" -> "0.2.2.3.9.24" 
+ [arrowhead=none]; "0.2.2.3.9.25" [label="Autoconfig/SLAAC temporary addresses (RFC4941)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.3.9" -> "0.2.2.3.9.25" 
+ [arrowhead=none]; "0.2.2.3.9.26" [label="Global prefix configuration feature", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.3.9" -> "0.2.2.3.9.26" 
+ [arrowhead=none]; "0.2.2.4" [label="Layer 3 Multicast", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.2" -> "0.2.2.4" 
+ [arrowhead=none]; "0.2.2.4.9" [label="Troubleshoot reverse path forwarding", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.4" -> "0.2.2.4.9" 
+ [arrowhead=none]; "0.2.2.4.9.26" [label="RPF failure", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.4.9" -> "0.2.2.4.9.26" 
+ [arrowhead=none]; "0.2.2.4.9.27" [label="RPF failure with tunnel interface", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.4.9" -> "0.2.2.4.9.27" 
+ [arrowhead=none]; "0.2.2.4.10" [label="IPv4 protocol independent multicast", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.4" -> "0.2.2.4.10" 
+ [arrowhead=none]; "0.2.2.4.10.27" [label="PIM dense mode, sparse mode, sparse-dense mode", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.4.10" -> "0.2.2.4.10.27" 
+ [arrowhead=none]; "0.2.2.4.10.28" [label="Static RP, auto-RP, BSR", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.4.10" -> "0.2.2.4.10.28" 
+ [arrowhead=none]; "0.2.2.4.10.29" [label="Bidirectional PIM", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.4.10" -> "0.2.2.4.10.29" 
+ [arrowhead=none]; "0.2.2.4.10.30" [label="Source-specific multicast", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.4.10" -> "0.2.2.4.10.30" 
+ [arrowhead=none]; "0.2.2.4.10.31" [label="Group to RP mapping", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.4.10" -> "0.2.2.4.10.31" 
+ [arrowhead=none]; "0.2.2.4.10.32" [label="Multicast boundary", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.4.10" -> "0.2.2.4.10.32" 
+ [arrowhead=none]; "0.2.2.4.11" [label="Multicast source discovery protocol", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.4" -> "0.2.2.4.11" 
+ [arrowhead=none]; "0.2.2.4.11.32" [label="Intra-domain MSDP (anycast RP)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.4.11" -> "0.2.2.4.11.32" 
+ [arrowhead=none]; "0.2.2.4.11.33" [label="SA filter", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.4.11" -> "0.2.2.4.11.33" 
+ [arrowhead=none]; "0.2.2.5" [label="Fundamental routing concepts", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.2" -> "0.2.2.5" 
+ [arrowhead=none]; "0.2.2.5.11" [label="Static routing", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.11" 
+ [arrowhead=none]; "0.2.2.5.12" [label="Default routing", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.12" 
+ [arrowhead=none]; "0.2.2.5.13" [label="Compare routing protocol types", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.13" 
+ [arrowhead=none]; "0.2.2.5.13.33" [label="distance vector", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.13" -> "0.2.2.5.13.33" 
+ [arrowhead=none]; "0.2.2.5.13.34" [label="link state", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.13" -> "0.2.2.5.13.34" 
+ [arrowhead=none]; "0.2.2.5.13.35" [label="path vector", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.13" -> "0.2.2.5.13.35" 
+ [arrowhead=none]; "0.2.2.5.14" [label="Administrative distance", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.14" 
+ [arrowhead=none]; "0.2.2.5.15" [label="Passive interface", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.15" 
+ [arrowhead=none]; "0.2.2.5.16" [label="VRF lite", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.16" 
+ [arrowhead=none]; "0.2.2.5.17" [label="Filtering with any routing protocol", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.17" 
+ [arrowhead=none]; "0.2.2.5.18" [label="Redistribution between any routing protocol", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.18" 
+ [arrowhead=none]; "0.2.2.5.19" [label="Manual and auto summarization with any routing protocol", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.19" 
+ [arrowhead=none]; "0.2.2.5.20" [label="Policy-based routing", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.20" 
+ [arrowhead=none]; "0.2.2.5.21" [label="Identify and troubleshoot sub-optimal routing", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.21" 
+ [arrowhead=none]; "0.2.2.5.22" [label="Bidirectional forwarding detection", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.22" 
+ [arrowhead=none]; "0.2.2.5.23" [label="Loop prevention mechanisms", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.23" 
+ [arrowhead=none]; "0.2.2.5.23.35" [label="Route tagging, filtering", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.23" -> "0.2.2.5.23.35" 
+ [arrowhead=none]; "0.2.2.5.23.36" [label="Split horizon", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.23" -> "0.2.2.5.23.36" 
+ [arrowhead=none]; "0.2.2.5.23.37" [label="Route poisoning", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.23" -> "0.2.2.5.23.37" 
+ [arrowhead=none]; "0.2.2.5.24" [label="Routing protocol authentication", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.5" -> "0.2.2.5.24" 
+ [arrowhead=none]; "0.2.2.5.24.37" [label="MD5", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.24" -> "0.2.2.5.24.37" 
+ [arrowhead=none]; "0.2.2.5.24.38" [label="key-chain", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.24" -> "0.2.2.5.24.38" 
+ [arrowhead=none]; "0.2.2.5.24.39" [label="EIGRP HMAC SHA2-256bit", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.24" -> "0.2.2.5.24.39" 
+ [arrowhead=none]; "0.2.2.5.24.40" [label="OSPFv2 SHA1-196bit", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.24" -> "0.2.2.5.24.40" 
+ [arrowhead=none]; "0.2.2.5.24.41" [label="OSPFv3 IPsec authentication", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.5.24" -> "0.2.2.5.24.41" 
+ [arrowhead=none]; "0.2.2.6" [label="RIP v2", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.2" -> "0.2.2.6" 
+ [arrowhead=none]; "0.2.2.6.24" [label="RIPv2", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.6" -> "0.2.2.6.24" 
+ [arrowhead=none]; "0.2.2.7" [label="EIGRP (for IPv4 and IPv6)", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.2" -> "0.2.2.7" 
+ [arrowhead=none]; "0.2.2.7.24" [label="Describe packet types", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.7" -> "0.2.2.7.24" 
+ [arrowhead=none]; "0.2.2.7.24.41" [label="Packet types (hello, query, update, and such)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.24" -> "0.2.2.7.24.41" 
+ [arrowhead=none]; "0.2.2.7.24.42" [label="Route types (internal, external)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.24" -> "0.2.2.7.24.42" 
+ [arrowhead=none]; "0.2.2.7.25" [label="Neighbor relationship", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.7" -> "0.2.2.7.25" 
+ [arrowhead=none]; "0.2.2.7.25.42" [label="Multicast, unicast EIGRP peering", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.25" -> "0.2.2.7.25.42" 
+ [arrowhead=none]; "0.2.2.7.26" [label="Loop free path selection", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.7" -> "0.2.2.7.26" 
+ [arrowhead=none]; "0.2.2.7.26.42" [label="RD, FD, FC, successor, feasible successor", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.26" -> "0.2.2.7.26.42" 
+ [arrowhead=none]; "0.2.2.7.26.43" [label="Classic metric", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.26" -> "0.2.2.7.26.43" 
+ [arrowhead=none]; "0.2.2.7.26.44" [label="Wide metric", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.26" -> "0.2.2.7.26.44" 
+ [arrowhead=none]; "0.2.2.7.27" [label="Operations", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.7" -> "0.2.2.7.27" 
+ [arrowhead=none]; "0.2.2.7.27.44" [label="General operations", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.27" -> "0.2.2.7.27.44" 
+ [arrowhead=none]; "0.2.2.7.27.45" [label="Topology table, update, query, active, passive", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.27" -> "0.2.2.7.27.45" 
+ [arrowhead=none]; "0.2.2.7.27.46" [label="Stuck in active", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.27" -> "0.2.2.7.27.46" 
+ [arrowhead=none]; "0.2.2.7.27.47" [label="Graceful shutdown", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.27" -> "0.2.2.7.27.47" 
+ [arrowhead=none]; "0.2.2.7.28" [label="EIGRP stub", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.7" -> "0.2.2.7.28" 
+ [arrowhead=none]; "0.2.2.7.28.47" [label="stub", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.28" -> "0.2.2.7.28.47" 
+ [arrowhead=none]; "0.2.2.7.28.48" [label="leak-map", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.28" -> "0.2.2.7.28.48" 
+ [arrowhead=none]; "0.2.2.7.29" [label="Load-balancing", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.7" -> "0.2.2.7.29" 
+ [arrowhead=none]; "0.2.2.7.29.48" [label="equal-cost", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.29" -> "0.2.2.7.29.48" 
+ [arrowhead=none]; "0.2.2.7.29.49" [label="unequal-cost", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.29" -> "0.2.2.7.29.49" 
+ [arrowhead=none]; "0.2.2.7.29.50" [label="add-path", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.29" -> "0.2.2.7.29.50" 
+ [arrowhead=none]; "0.2.2.7.30" [label="Implement EIGRP (multi-address) named mode", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.7" -> "0.2.2.7.30" 
+ [arrowhead=none]; "0.2.2.7.30.50" [label="Types of families", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.30" -> "0.2.2.7.30.50" 
+ [arrowhead=none]; "0.2.2.7.30.51" [label="IPv4 address-family", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.30" -> "0.2.2.7.30.51" 
+ [arrowhead=none]; "0.2.2.7.30.52" [label="IPv6 address-family", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.30" -> "0.2.2.7.30.52" 
+ [arrowhead=none]; "0.2.2.7.31" [label="Implement, troubleshoot and optimize EIGRP convergence and scalability", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.7" -> "0.2.2.7.31" 
+ [arrowhead=none]; "0.2.2.7.31.52" [label="Describe fast convergence requirements", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.31" -> "0.2.2.7.31.52" 
+ [arrowhead=none]; "0.2.2.7.31.53" [label="Control query boundaries", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.31" -> "0.2.2.7.31.53" 
+ [arrowhead=none]; "0.2.2.7.31.54" [label="IP FRR/fast reroute (single hop)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.31" -> "0.2.2.7.31.54" 
+ [arrowhead=none]; "0.2.2.7.31.55" [label="Summary leak-map", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.31" -> "0.2.2.7.31.55" 
+ [arrowhead=none]; "0.2.2.7.31.56" [label="Summary metric", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.7.31" -> "0.2.2.7.31.56" 
+ [arrowhead=none]; "0.2.2.8" [label="OSPF (v2 and v3)", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.2" -> "0.2.2.8" 
+ [arrowhead=none]; "0.2.2.8.31" [label="Describe packet types", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.8" -> "0.2.2.8.31" 
+ [arrowhead=none]; "0.2.2.8.31.56" [label="LSA types (1, 2, 3, 4, 5, 7, 9)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.31" -> "0.2.2.8.31.56" 
+ [arrowhead=none]; "0.2.2.8.31.57" [label="Route types (N1, N2, E1, E2)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.31" -> "0.2.2.8.31.57" 
+ [arrowhead=none]; "0.2.2.8.32" [label="Neighbor relationship", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.8" -> "0.2.2.8.32" 
+ [arrowhead=none]; "0.2.2.8.33" [label="OSPFv3 address-family support", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.8" -> "0.2.2.8.33" 
+ [arrowhead=none]; "0.2.2.8.33.57" [label="IPv4 address-family", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.33" -> "0.2.2.8.33.57" 
+ [arrowhead=none]; "0.2.2.8.33.58" [label="IPv6 address-family", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.33" -> "0.2.2.8.33.58" 
+ [arrowhead=none]; "0.2.2.8.34" [label="Network types, area types and router types", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.8" -> "0.2.2.8.34" 
+ [arrowhead=none]; "0.2.2.8.34.58" [label="Point-to-point, multipoint, broadcast, non-broadcast", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.34" -> "0.2.2.8.34.58" 
+ [arrowhead=none]; "0.2.2.8.34.59" [label="LSA types, area type: backbone, normal, transit, stub, NSSA, totally", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.34" -> "0.2.2.8.34.59" 
+ [arrowhead=none]; "0.2.2.8.34.60" [label="Internal router, ABR, ASBR", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.34" -> "0.2.2.8.34.60" 
+ [arrowhead=none]; "0.2.2.8.34.61" [label="Virtual link", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.34" -> "0.2.2.8.34.61" 
+ [arrowhead=none]; "0.2.2.8.35" [label="Path preference", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.8" -> "0.2.2.8.35" 
+ [arrowhead=none]; "0.2.2.8.36" [label="Operations", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.8" -> "0.2.2.8.36" 
+ [arrowhead=none]; "0.2.2.8.36.61" [label="General operations", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.36" -> "0.2.2.8.36.61" 
+ [arrowhead=none]; "0.2.2.8.36.62" [label="Graceful shutdown", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.36" -> "0.2.2.8.36.62" 
+ [arrowhead=none]; "0.2.2.8.36.63" [label="GTSM (generic TTL security mechanism)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.36" -> "0.2.2.8.36.63" 
+ [arrowhead=none]; "0.2.2.8.37" [label="Implement, troubleshoot and optimize OSPF convergence and scalability", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.8" -> "0.2.2.8.37" 
+ [arrowhead=none]; "0.2.2.8.37.63" [label="Metrics", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.37" -> "0.2.2.8.37.63" 
+ [arrowhead=none]; "0.2.2.8.37.64" [label="LSA throttling, SPF tuning, fast hello", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.37" -> "0.2.2.8.37.64" 
+ [arrowhead=none]; "0.2.2.8.37.65" [label="LSA propagation control (area types, ISPF)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.37" -> "0.2.2.8.37.65" 
+ [arrowhead=none]; "0.2.2.8.37.66" [label="IP FR/fast reroute (single hop)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.37" -> "0.2.2.8.37.66" 
+ [arrowhead=none]; "0.2.2.8.37.67" [label="LFA/loop-free alternative (multi hop)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.37" -> "0.2.2.8.37.67" 
+ [arrowhead=none]; "0.2.2.8.37.68" [label="OSPFv3 prefix suppression", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.8.37" -> "0.2.2.8.37.68" 
+ [arrowhead=none]; "0.2.2.9" [label="BGP", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.2" -> "0.2.2.9" 
+ [arrowhead=none]; "0.2.2.9.37" [label="Describe, Peer relationships", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.9" -> "0.2.2.9.37" 
+ [arrowhead=none]; "0.2.2.9.37.68" [label="Peer-group, template", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.37" -> "0.2.2.9.37.68" 
+ [arrowhead=none]; "0.2.2.9.37.69" [label="Active, passive", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.37" -> "0.2.2.9.37.69" 
+ [arrowhead=none]; "0.2.2.9.37.70" [label="States, timers", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.37" -> "0.2.2.9.37.70" 
+ [arrowhead=none]; "0.2.2.9.37.71" [label="Dynamic neighbors", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.37" -> "0.2.2.9.37.71" 
+ [arrowhead=none]; "0.2.2.9.38" [label="IBGP and EBGP", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.9" -> "0.2.2.9.38" 
+ [arrowhead=none]; "0.2.2.9.38.71" [label="EBGP, IBGP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.38" -> "0.2.2.9.38.71" 
+ [arrowhead=none]; "0.2.2.9.38.72" [label="4 bytes AS number", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.38" -> "0.2.2.9.38.72" 
+ [arrowhead=none]; "0.2.2.9.38.73" [label="Private AS", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.38" -> "0.2.2.9.38.73" 
+ [arrowhead=none]; "0.2.2.9.39" [label="Explain attributes and best-path selection", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.9" -> "0.2.2.9.39" 
+ [arrowhead=none]; "0.2.2.9.40" [label="Routing policies", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.9" -> "0.2.2.9.40" 
+ [arrowhead=none]; "0.2.2.9.40.73" [label="Attribute manipulation", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.40" -> "0.2.2.9.40.73" 
+ [arrowhead=none]; "0.2.2.9.40.74" [label="Conditional advertisement", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.40" -> "0.2.2.9.40.74" 
+ [arrowhead=none]; "0.2.2.9.40.75" [label="Outbound route filtering", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.40" -> "0.2.2.9.40.75" 
+ [arrowhead=none]; "0.2.2.9.40.76" [label="Communities, extended communities", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.40" -> "0.2.2.9.40.76" 
+ [arrowhead=none]; "0.2.2.9.40.77" [label="Multi-homing", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.40" -> "0.2.2.9.40.77" 
+ [arrowhead=none]; "0.2.2.9.41" [label="Scalability", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.9" -> "0.2.2.9.41" 
+ [arrowhead=none]; "0.2.2.9.41.77" [label="Route-reflector, cluster", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.41" -> "0.2.2.9.41.77" 
+ [arrowhead=none]; "0.2.2.9.41.78" [label="Confederations", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.41" -> "0.2.2.9.41.78" 
+ [arrowhead=none]; "0.2.2.9.41.79" [label="Aggregation, AS set", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.41" -> "0.2.2.9.41.79" 
+ [arrowhead=none]; "0.2.2.9.42" [label="Multi-protocol BGP", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.9" -> "0.2.2.9.42" 
+ [arrowhead=none]; "0.2.2.9.42.79" [label="IPv4, IPv6, VPN address-family", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.42" -> "0.2.2.9.42.79" 
+ [arrowhead=none]; "0.2.2.9.43" [label="AS path manipulations", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.9" -> "0.2.2.9.43" 
+ [arrowhead=none]; "0.2.2.9.43.79" [label="Local AS, allow AS in, remove private AS", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.43" -> "0.2.2.9.43.79" 
+ [arrowhead=none]; "0.2.2.9.43.80" [label="Prepend", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.43" -> "0.2.2.9.43.80" 
+ [arrowhead=none]; "0.2.2.9.43.81" [label="Regexp", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.43" -> "0.2.2.9.43.81" 
+ [arrowhead=none]; "0.2.2.9.44" [label="Other Features", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.2.9" -> "0.2.2.9.44" 
+ [arrowhead=none]; "0.2.2.9.44.81" [label="Multipath", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.44" -> "0.2.2.9.44.81" 
+ [arrowhead=none]; "0.2.2.9.44.82" [label="BGP synchronization", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.44" -> "0.2.2.9.44.82" 
+ [arrowhead=none]; "0.2.2.9.44.83" [label="Soft reconfiguration, route refresh", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.2.9.44" -> "0.2.2.9.44.83" 
+ [arrowhead=none]; "0.2.3" [label="VPN Technologies", fillcolor=orangered, style=filled, shape= ellipse ] ;
+"0.2" -> "0.2.3" 
+ [arrowhead=none]; "0.2.3.9" [label="Tunneling", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.3" -> "0.2.3.9" 
+ [arrowhead=none]; "0.2.3.9.44" [label="MPLS operations", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.3.9" -> "0.2.3.9.44" 
+ [arrowhead=none]; "0.2.3.9.44.83" [label="Label stack, LSR, LSP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.44" -> "0.2.3.9.44.83" 
+ [arrowhead=none]; "0.2.3.9.44.84" [label="LDP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.44" -> "0.2.3.9.44.84" 
+ [arrowhead=none]; "0.2.3.9.44.85" [label="MPLS ping, MPLS traceroute", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.44" -> "0.2.3.9.44.85" 
+ [arrowhead=none]; "0.2.3.9.45" [label="Basic MPLS L3VPN", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.3.9" -> "0.2.3.9.45" 
+ [arrowhead=none]; "0.2.3.9.45.85" [label="L3VPN, CE, PE, P", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.45" -> "0.2.3.9.45.85" 
+ [arrowhead=none]; "0.2.3.9.45.86" [label="Extranet (route leaking)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.45" -> "0.2.3.9.45.86" 
+ [arrowhead=none]; "0.2.3.9.46" [label="Encapsulation", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.3.9" -> "0.2.3.9.46" 
+ [arrowhead=none]; "0.2.3.9.46.86" [label="GRE", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.46" -> "0.2.3.9.46.86" 
+ [arrowhead=none]; "0.2.3.9.46.87" [label="Dynamic GRE", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.46" -> "0.2.3.9.46.87" 
+ [arrowhead=none]; "0.2.3.9.47" [label="DMVPN (single hub)", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.3.9" -> "0.2.3.9.47" 
+ [arrowhead=none]; "0.2.3.9.47.87" [label="NHRP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.47" -> "0.2.3.9.47.87" 
+ [arrowhead=none]; "0.2.3.9.47.88" [label="DMVPN with IPsec using preshared key", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.47" -> "0.2.3.9.47.88" 
+ [arrowhead=none]; "0.2.3.9.47.89" [label="QoS profile", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.47" -> "0.2.3.9.47.89" 
+ [arrowhead=none]; "0.2.3.9.47.90" [label="Pre-classify", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.9.47" -> "0.2.3.9.47.90" 
+ [arrowhead=none]; "0.2.3.10" [label="Encryption", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.3" -> "0.2.3.10" 
+ [arrowhead=none]; "0.2.3.10.47" [label="IPsec with preshared key", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.3.10" -> "0.2.3.10.47" 
+ [arrowhead=none]; "0.2.3.10.47.90" [label="IPv4 site to IPv4 site", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.10.47" -> "0.2.3.10.47.90" 
+ [arrowhead=none]; "0.2.3.10.47.91" [label="IPv6 in IPv4 tunnels", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.10.47" -> "0.2.3.10.47.91" 
+ [arrowhead=none]; "0.2.3.10.47.92" [label="Virtual tunneling interface (VTI)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.3.10.47" -> "0.2.3.10.47.92" 
+ [arrowhead=none]; "0.2.4" [label="Troubleshooting VPN technologies", fillcolor=orangered, style=filled, shape= ellipse ] ;
+"0.2" -> "0.2.4" 
+ [arrowhead=none]; "0.2.4.10" [label="Use IOS troubleshooting tools", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.4" -> "0.2.4.10" 
+ [arrowhead=none]; "0.2.4.10.47" [label="debug, conditional debug", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.4.10" -> "0.2.4.10.47" 
+ [arrowhead=none]; "0.2.4.10.48" [label="ping, traceroute with extended options", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.4.10" -> "0.2.4.10.48" 
+ [arrowhead=none]; "0.2.4.10.49" [label="Embedded packet capture", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.4.10" -> "0.2.4.10.49" 
+ [arrowhead=none]; "0.2.4.11" [label="Apply troubleshooting methodologies", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.4" -> "0.2.4.11" 
+ [arrowhead=none]; "0.2.4.11.49" [label="Diagnose the root cause of networking issue (analyze symptoms, identify and describe root cause)", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.4.11" -> "0.2.4.11.49" 
+ [arrowhead=none]; "0.2.4.11.50" [label="Design and implement valid solutions according to constraints", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.4.11" -> "0.2.4.11.50" 
+ [arrowhead=none]; "0.2.4.11.51" [label="Verify and monitor resolution", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.4.11" -> "0.2.4.11.51" 
+ [arrowhead=none]; "0.2.4.12" [label="Interpret packet capture", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.4" -> "0.2.4.12" 
+ [arrowhead=none]; "0.2.4.12.51" [label="Using wireshark trace analyzer", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.4.12" -> "0.2.4.12.51" 
+ [arrowhead=none]; "0.2.4.12.52" [label="Using IOS embedded packet capture", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.4.12" -> "0.2.4.12.52" 
+ [arrowhead=none]; "0.2.5" [label="Infrastructure Security", fillcolor=orangered, style=filled, shape= ellipse ] ;
+"0.2" -> "0.2.5" 
+ [arrowhead=none]; "0.2.5.12" [label="Device security", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.5" -> "0.2.5.12" 
+ [arrowhead=none]; "0.2.5.12.52" [label="IOS AAA using local database", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.5.12" -> "0.2.5.12.52" 
+ [arrowhead=none]; "0.2.5.12.53" [label="Device access control", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.5.12" -> "0.2.5.12.53" 
+ [arrowhead=none]; "0.2.5.12.53.92" [label="Lines (VTY, AUX, console)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.12.53" -> "0.2.5.12.53.92" 
+ [arrowhead=none]; "0.2.5.12.53.93" [label="SNMP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.12.53" -> "0.2.5.12.53.93" 
+ [arrowhead=none]; "0.2.5.12.53.94" [label="Management plane protection", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.12.53" -> "0.2.5.12.53.94" 
+ [arrowhead=none]; "0.2.5.12.53.95" [label="Password encryption", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.12.53" -> "0.2.5.12.53.95" 
+ [arrowhead=none]; "0.2.5.12.54" [label="Control plane policing", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.5.12" -> "0.2.5.12.54" 
+ [arrowhead=none]; "0.2.5.13" [label="Network security", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.5" -> "0.2.5.13" 
+ [arrowhead=none]; "0.2.5.13.54" [label="Switch security features", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.5.13" -> "0.2.5.13.54" 
+ [arrowhead=none]; "0.2.5.13.54.95" [label="VACL, PACL", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.54" -> "0.2.5.13.54.95" 
+ [arrowhead=none]; "0.2.5.13.54.96" [label="Stormcontrol", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.54" -> "0.2.5.13.54.96" 
+ [arrowhead=none]; "0.2.5.13.54.97" [label="DHCP snooping", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.54" -> "0.2.5.13.54.97" 
+ [arrowhead=none]; "0.2.5.13.54.98" [label="IP source-guard", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.54" -> "0.2.5.13.54.98" 
+ [arrowhead=none]; "0.2.5.13.54.99" [label="Dynamic ARP inspection", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.54" -> "0.2.5.13.54.99" 
+ [arrowhead=none]; "0.2.5.13.54.100" [label="Port-security", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.54" -> "0.2.5.13.54.100" 
+ [arrowhead=none]; "0.2.5.13.54.101" [label="Private VLAN", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.54" -> "0.2.5.13.54.101" 
+ [arrowhead=none]; "0.2.5.13.55" [label="Router security features", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.5.13" -> "0.2.5.13.55" 
+ [arrowhead=none]; "0.2.5.13.55.101" [label="IPv4 access control lists (standard, extended, time-based)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.55" -> "0.2.5.13.55.101" 
+ [arrowhead=none]; "0.2.5.13.55.102" [label="IPv6 traffic filter", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.55" -> "0.2.5.13.55.102" 
+ [arrowhead=none]; "0.2.5.13.55.103" [label="Unicast reverse path forwarding", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.55" -> "0.2.5.13.55.103" 
+ [arrowhead=none]; "0.2.5.13.56" [label="IPv6 first hop security", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.5.13" -> "0.2.5.13.56" 
+ [arrowhead=none]; "0.2.5.13.56.103" [label="RA guard", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.56" -> "0.2.5.13.56.103" 
+ [arrowhead=none]; "0.2.5.13.56.104" [label="DHCP guard", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.56" -> "0.2.5.13.56.104" 
+ [arrowhead=none]; "0.2.5.13.56.105" [label="Binding table", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.56" -> "0.2.5.13.56.105" 
+ [arrowhead=none]; "0.2.5.13.56.106" [label="Device tracking", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.56" -> "0.2.5.13.56.106" 
+ [arrowhead=none]; "0.2.5.13.56.107" [label="ND inspection/snooping", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.56" -> "0.2.5.13.56.107" 
+ [arrowhead=none]; "0.2.5.13.56.108" [label="Source guard", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.56" -> "0.2.5.13.56.108" 
+ [arrowhead=none]; "0.2.5.13.56.109" [label="PACL", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.5.13.56" -> "0.2.5.13.56.109" 
+ [arrowhead=none]; "0.2.6" [label="Infrastructure Services", fillcolor=orangered, style=filled, shape= ellipse ] ;
+"0.2" -> "0.2.6" 
+ [arrowhead=none]; "0.2.6.13" [label="System management", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.6" -> "0.2.6.13" 
+ [arrowhead=none]; "0.2.6.13.56" [label="Device management", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.13" -> "0.2.6.13.56" 
+ [arrowhead=none]; "0.2.6.13.56.109" [label="Console and VTY", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.13.56" -> "0.2.6.13.56.109" 
+ [arrowhead=none]; "0.2.6.13.56.110" [label="telnet, HTTP, HTTPS, SSH, SCP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.13.56" -> "0.2.6.13.56.110" 
+ [arrowhead=none]; "0.2.6.13.56.111" [label="(T)FTP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.13.56" -> "0.2.6.13.56.111" 
+ [arrowhead=none]; "0.2.6.13.57" [label="SNMP", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.13" -> "0.2.6.13.57" 
+ [arrowhead=none]; "0.2.6.13.57.111" [label="v2c, v3", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.13.57" -> "0.2.6.13.57.111" 
+ [arrowhead=none]; "0.2.6.13.58" [label="Logging", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.13" -> "0.2.6.13.58" 
+ [arrowhead=none]; "0.2.6.13.58.111" [label="Local logging, syslog, debug, conditional debug", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.13.58" -> "0.2.6.13.58.111" 
+ [arrowhead=none]; "0.2.6.13.58.112" [label="Timestamp", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.13.58" -> "0.2.6.13.58.112" 
+ [arrowhead=none]; "0.2.6.14" [label="Quality of service", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.6" -> "0.2.6.14" 
+ [arrowhead=none]; "0.2.6.14.58" [label="End to end QoS", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.14" -> "0.2.6.14.58" 
+ [arrowhead=none]; "0.2.6.14.58.112" [label="CoS and DSCP mapping", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.14.58" -> "0.2.6.14.58.112" 
+ [arrowhead=none]; "0.2.6.14.59" [label="QoS using MQC", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.14" -> "0.2.6.14.59" 
+ [arrowhead=none]; "0.2.6.14.59.112" [label="Classification", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.14.59" -> "0.2.6.14.59.112" 
+ [arrowhead=none]; "0.2.6.14.59.113" [label="Network based application recognition (NBAR)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.14.59" -> "0.2.6.14.59.113" 
+ [arrowhead=none]; "0.2.6.14.59.114" [label="Marking using IP precedence, DSCP, CoS, ECN", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.14.59" -> "0.2.6.14.59.114" 
+ [arrowhead=none]; "0.2.6.14.59.115" [label="Policing", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.14.59" -> "0.2.6.14.59.115" 
+ [arrowhead=none]; "0.2.6.14.59.116" [label="Shaping", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.14.59" -> "0.2.6.14.59.116" 
+ [arrowhead=none]; "0.2.6.14.59.117" [label="Congestion management (queuing)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.14.59" -> "0.2.6.14.59.117" 
+ [arrowhead=none]; "0.2.6.14.59.118" [label="HQoS, sub-rate ethernet link", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.14.59" -> "0.2.6.14.59.118" 
+ [arrowhead=none]; "0.2.6.14.59.119" [label="Congestion avoidance (WRED)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.14.59" -> "0.2.6.14.59.119" 
+ [arrowhead=none]; "0.2.6.15" [label="Network services", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.6" -> "0.2.6.15" 
+ [arrowhead=none]; "0.2.6.15.59" [label="First-hop redundancy protocols", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.15" -> "0.2.6.15.59" 
+ [arrowhead=none]; "0.2.6.15.59.119" [label="HSRP, GLBP, VRRP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.59" -> "0.2.6.15.59.119" 
+ [arrowhead=none]; "0.2.6.15.59.120" [label="Redundancy using IPv6 RS/RA", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.59" -> "0.2.6.15.59.120" 
+ [arrowhead=none]; "0.2.6.15.60" [label="Network time protocol", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.15" -> "0.2.6.15.60" 
+ [arrowhead=none]; "0.2.6.15.60.120" [label="NTP master, client, version 3, version 4", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.60" -> "0.2.6.15.60.120" 
+ [arrowhead=none]; "0.2.6.15.60.121" [label="NTP authentication", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.60" -> "0.2.6.15.60.121" 
+ [arrowhead=none]; "0.2.6.15.61" [label="IPv4 and IPv6 DHCP", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.15" -> "0.2.6.15.61" 
+ [arrowhead=none]; "0.2.6.15.61.121" [label="DHCP client, IOS DHCP server, DHCP relay", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.61" -> "0.2.6.15.61.121" 
+ [arrowhead=none]; "0.2.6.15.61.122" [label="DHCP options", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.61" -> "0.2.6.15.61.122" 
+ [arrowhead=none]; "0.2.6.15.61.123" [label="DHCP protocol operations", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.61" -> "0.2.6.15.61.123" 
+ [arrowhead=none]; "0.2.6.15.61.124" [label="SLAAC/DHCPv6 interaction", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.61" -> "0.2.6.15.61.124" 
+ [arrowhead=none]; "0.2.6.15.61.125" [label="Stateful, stateless DHCPv6", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.61" -> "0.2.6.15.61.125" 
+ [arrowhead=none]; "0.2.6.15.61.126" [label="DHCPv6 prefix delegation", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.61" -> "0.2.6.15.61.126" 
+ [arrowhead=none]; "0.2.6.15.62" [label="IPv4 network address translation", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.15" -> "0.2.6.15.62" 
+ [arrowhead=none]; "0.2.6.15.62.126" [label="Static NAT, dynamic NAT, policy-based NAT, PAT", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.62" -> "0.2.6.15.62.126" 
+ [arrowhead=none]; "0.2.6.15.62.127" [label="NAT ALG", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.15.62" -> "0.2.6.15.62.127" 
+ [arrowhead=none]; "0.2.6.16" [label="Network optimization", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.6" -> "0.2.6.16" 
+ [arrowhead=none]; "0.2.6.16.62" [label="IP SLA", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.16" -> "0.2.6.16.62" 
+ [arrowhead=none]; "0.2.6.16.62.127" [label="ICMP, UDP, jitter, VoIP", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.16.62" -> "0.2.6.16.62.127" 
+ [arrowhead=none]; "0.2.6.16.63" [label="Tracking object", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.16" -> "0.2.6.16.63" 
+ [arrowhead=none]; "0.2.6.16.63.127" [label="Tracking object, tracking list", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.16.63" -> "0.2.6.16.63.127" 
+ [arrowhead=none]; "0.2.6.16.63.128" [label="Tracking different entities (e.g. interfaces, routes, IPSLA, and such)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.16.63" -> "0.2.6.16.63.128" 
+ [arrowhead=none]; "0.2.6.16.64" [label="Netflow", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.16" -> "0.2.6.16.64" 
+ [arrowhead=none]; "0.2.6.16.64.128" [label="Netflow v5, v9", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.16.64" -> "0.2.6.16.64.128" 
+ [arrowhead=none]; "0.2.6.16.64.129" [label="Local retrieval", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.16.64" -> "0.2.6.16.64.129" 
+ [arrowhead=none]; "0.2.6.16.64.130" [label="Export (configuration only)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.16.64" -> "0.2.6.16.64.130" 
+ [arrowhead=none]; "0.2.6.16.65" [label="Embedded event manager", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.16" -> "0.2.6.16.65" 
+ [arrowhead=none]; "0.2.6.16.65.130" [label="EEM policy using applet", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.16.65" -> "0.2.6.16.65.130" 
+ [arrowhead=none]; "0.2.6.17" [label="Troubleshooting skills", fillcolor=chartreuse, style=filled, shape= ellipse ] ;
+"0.2.6" -> "0.2.6.17" 
+ [arrowhead=none]; "0.2.6.17.65" [label="Use IOS troubleshooting tools", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.17" -> "0.2.6.17.65" 
+ [arrowhead=none]; "0.2.6.17.65.130" [label="debug, conditional debug", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.17.65" -> "0.2.6.17.65.130" 
+ [arrowhead=none]; "0.2.6.17.65.131" [label="ping, traceroute with extended options", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.17.65" -> "0.2.6.17.65.131" 
+ [arrowhead=none]; "0.2.6.17.65.132" [label="Embedded packet capture", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.17.65" -> "0.2.6.17.65.132" 
+ [arrowhead=none]; "0.2.6.17.66" [label="Apply troubleshooting methodologies", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.17" -> "0.2.6.17.66" 
+ [arrowhead=none]; "0.2.6.17.66.132" [label="Diagnose the root cause of networking issue (analyze symptoms, identify and describe root cause)", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.17.66" -> "0.2.6.17.66.132" 
+ [arrowhead=none]; "0.2.6.17.66.133" [label="Design and implement valid solutions according to constraints", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.17.66" -> "0.2.6.17.66.133" 
+ [arrowhead=none]; "0.2.6.17.66.134" [label="Verify and monitor resolution", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.17.66" -> "0.2.6.17.66.134" 
+ [arrowhead=none]; "0.2.6.17.67" [label="Interpret packet capture", fillcolor=white, style=filled, shape= ellipse ] ;
+"0.2.6.17" -> "0.2.6.17.67" 
+ [arrowhead=none]; "0.2.6.17.67.134" [label="Using wireshark trace analyzer", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.17.67" -> "0.2.6.17.67.134" 
+ [arrowhead=none]; "0.2.6.17.67.135" [label="Using IOS embedded packet capture", fillcolor=transparent, style=filled, shape= none ] ;
+"0.2.6.17.67" -> "0.2.6.17.67.135" 
+ [arrowhead=none]; }

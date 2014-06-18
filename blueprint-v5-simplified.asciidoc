@@ -1,0 +1,334 @@
+= CCIE Routing and Switching
+
+== Layer 2 Technologies
+=== LAN switching technologies
+==== Switch administration
+===== Managing MAC address table
+===== errdisable recovery
+===== L2 MTU
+==== Layer 2 protocols
+===== CDP, LLDP
+===== UDLD
+==== VLAN
+===== access ports
+===== VLAN database
+===== normal, extended VLAN, voice VLAN
+==== Trunking
+===== VTPv1, VTPv2, VTPv3, VTP pruning
+===== dot1Q
+===== Native VLAN
+===== Manual pruning
+==== Etherchannel
+===== LACP, PAgP, manual
+===== layer 2, layer 3
+===== load-balancing
+===== etherchannel misconfiguration guard
+==== Spanning-tree
+===== PVST+/RPVST+/MST
+===== switch priority, port priority, path cost, STP timers
+===== port fast, BPDUguard, BPDUfilter
+===== loopguard, rootguard
+==== Other LAN switching technologies
+===== SPAN, RSPAN, ERSPAN
+
+=== Layer 2 Multicast
+==== IGMP
+===== IGMPv1, IGMPv2, IGMPv3
+===== IGMP snooping
+===== IGMP querier
+===== IGMP filter
+===== IGMP proxy
+
+=== Layer 2 WAN circuit technologies
+==== HDLC
+==== PPP
+===== authentication (PAP, CHAP)
+===== PPPoE
+===== MLPPP
+
+
+== Layer 3 Technologies
+=== Addressing technologies
+==== Identify, IPv4 addressing and sub-netting
+===== Address types, VLSM
+===== ARP
+==== Identify, IPv6 addressing and sub-netting
+===== Unicast, multicast
+===== EUI-64
+===== ND, RS/RA
+===== Autoconfig/SLAAC temporary addresses (RFC4941)
+===== Global prefix configuration feature
+
+=== Layer 3 Multicast
+==== Troubleshoot reverse path forwarding
+===== RPF failure
+===== RPF failure with tunnel interface
+
+==== IPv4 protocol independent multicast
+===== PIM dense mode, sparse mode, sparse-dense mode
+===== Static RP, auto-RP, BSR
+===== Bidirectional PIM
+===== Source-specific multicast
+===== Group to RP mapping
+===== Multicast boundary
+==== Multicast source discovery protocol
+===== Intra-domain MSDP (anycast RP)
+===== SA filter
+
+=== Fundamental routing concepts
+==== Static routing
+==== Default routing
+==== Compare routing protocol types
+===== distance vector
+===== link state
+===== path vector
+==== Administrative distance
+==== Passive interface
+==== VRF lite
+==== Filtering with any routing protocol
+==== Redistribution between any routing protocol
+==== Manual and auto summarization with any routing protocol
+==== Policy-based routing
+==== Identify and troubleshoot sub-optimal routing
+==== Bidirectional forwarding detection
+==== Loop prevention mechanisms
+===== Route tagging, filtering
+===== Split horizon
+===== Route poisoning
+==== Routing protocol authentication
+===== MD5
+===== key-chain
+===== EIGRP HMAC SHA2-256bit
+===== OSPFv2 SHA1-196bit
+===== OSPFv3 IPsec authentication
+
+=== RIP v2
+==== RIPv2
+
+=== EIGRP (for IPv4 and IPv6)
+==== Describe packet types
+===== Packet types (hello, query, update, and such)
+===== Route types (internal, external)
+==== Neighbor relationship
+
+===== Multicast, unicast EIGRP peering
+==== Loop free path selection
+
+===== RD, FD, FC, successor, feasible successor
+===== Classic metric
+===== Wide metric
+==== Operations
+===== General operations
+===== Topology table, update, query, active, passive
+===== Stuck in active
+===== Graceful shutdown
+==== EIGRP stub
+===== stub
+===== leak-map
+==== Load-balancing
+===== equal-cost
+===== unequal-cost
+===== add-path
+==== Implement EIGRP (multi-address) named mode
+===== Types of families
+===== IPv4 address-family
+===== IPv6 address-family
+==== Implement, troubleshoot and optimize EIGRP convergence and scalability
+===== Describe fast convergence requirements
+===== Control query boundaries
+===== IP FRR/fast reroute (single hop)
+===== Summary leak-map
+===== Summary metric
+
+=== OSPF (v2 and v3)
+==== Describe packet types
+===== LSA types (1, 2, 3, 4, 5, 7, 9)
+===== Route types (N1, N2, E1, E2)
+==== Neighbor relationship
+==== OSPFv3 address-family support
+===== IPv4 address-family
+===== IPv6 address-family
+==== Network types, area types and router types
+===== Point-to-point, multipoint, broadcast, non-broadcast
+===== LSA types, area type: backbone, normal, transit, stub, NSSA, totally
+                                         stub
+===== Internal router, ABR, ASBR
+===== Virtual link
+==== Path preference
+==== Operations
+===== General operations
+===== Graceful shutdown
+===== GTSM (generic TTL security mechanism)
+
+==== Implement, troubleshoot and optimize OSPF convergence and scalability
+===== Metrics
+===== LSA throttling, SPF tuning, fast hello
+===== LSA propagation control (area types, ISPF)
+===== IP FR/fast reroute (single hop)
+===== LFA/loop-free alternative (multi hop)
+===== OSPFv3 prefix suppression
+
+=== BGP
+==== Describe, Peer relationships
+===== Peer-group, template
+===== Active, passive
+===== States, timers
+===== Dynamic neighbors
+==== IBGP and EBGP
+===== EBGP, IBGP
+===== 4 bytes AS number
+===== Private AS
+==== Explain attributes and best-path selection
+==== Routing policies
+===== Attribute manipulation
+===== Conditional advertisement
+===== Outbound route filtering
+===== Communities, extended communities
+===== Multi-homing
+==== Scalability
+===== Route-reflector, cluster
+===== Confederations
+===== Aggregation, AS set
+==== Multi-protocol BGP
+===== IPv4, IPv6, VPN address-family
+==== AS path manipulations
+===== Local AS, allow AS in, remove private AS
+===== Prepend
+===== Regexp
+==== Other Features
+===== Multipath
+===== BGP synchronization
+===== Soft reconfiguration, route refresh
+
+
+== VPN Technologies
+=== Tunneling
+==== MPLS operations
+===== Label stack, LSR, LSP
+===== LDP
+===== MPLS ping, MPLS traceroute
+==== Basic MPLS L3VPN
+===== L3VPN, CE, PE, P
+===== Extranet (route leaking)
+==== Encapsulation
+===== GRE
+===== Dynamic GRE
+==== DMVPN (single hub)
+===== NHRP
+===== DMVPN with IPsec using preshared key
+===== QoS profile
+===== Pre-classify
+
+=== Encryption
+==== IPsec with preshared key
+===== IPv4 site to IPv4 site
+===== IPv6 in IPv4 tunnels
+===== Virtual tunneling interface (VTI)
+
+== Infrastructure Security
+=== Device security
+==== IOS AAA using local database
+==== Device access control
+
+===== Lines (VTY, AUX, console)
+===== SNMP
+===== Management plane protection
+===== Password encryption
+==== Control plane policing
+
+=== Network security
+==== Switch security features
+===== VACL, PACL
+===== Stormcontrol
+===== DHCP snooping
+===== IP source-guard
+===== Dynamic ARP inspection
+===== Port-security
+===== Private VLAN
+==== Router security features
+===== IPv4 access control lists (standard, extended, time-based)
+===== IPv6 traffic filter
+===== Unicast reverse path forwarding
+==== IPv6 first hop security
+===== RA guard
+===== DHCP guard
+===== Binding table
+===== Device tracking
+===== ND inspection/snooping
+===== Source guard
+===== PACL
+
+
+== Infrastructure Services
+=== System management
+==== Device management
+===== Console and VTY
+===== telnet, HTTP, HTTPS, SSH, SCP
+===== (T)FTP
+
+==== SNMP
+===== v2c, v3
+==== Logging
+===== Local logging, syslog, debug, conditional debug
+===== Timestamp
+
+=== Quality of service
+==== End to end QoS
+===== CoS and DSCP mapping
+==== QoS using MQC
+===== Classification
+===== Network based application recognition (NBAR)
+===== Marking using IP precedence, DSCP, CoS, ECN
+===== Policing
+===== Shaping
+===== Congestion management (queuing)
+===== HQoS, sub-rate ethernet link
+===== Congestion avoidance (WRED)
+
+=== Network services
+==== First-hop redundancy protocols
+===== HSRP, GLBP, VRRP
+===== Redundancy using IPv6 RS/RA
+==== Network time protocol
+===== NTP master, client, version 3, version 4
+===== NTP authentication
+==== IPv4 and IPv6 DHCP
+===== DHCP client, IOS DHCP server, DHCP relay
+===== DHCP options
+===== DHCP protocol operations
+===== SLAAC/DHCPv6 interaction
+===== Stateful, stateless DHCPv6
+===== DHCPv6 prefix delegation
+==== IPv4 network address translation
+===== Static NAT, dynamic NAT, policy-based NAT, PAT
+===== NAT ALG
+
+=== Network optimization
+==== IP SLA
+===== ICMP, UDP, jitter, VoIP
+==== Tracking object
+===== Tracking object, tracking list
+===== Tracking different entities (e.g. interfaces, routes, IPSLA, and such)
+==== Netflow
+===== Netflow v5, v9
+===== Local retrieval
+===== Export (configuration only)
+==== Embedded event manager
+===== EEM policy using applet
+
+== Troubleshooting skills
+=== Use IOS troubleshooting tools
+==== debug, conditional debug
+==== ping, traceroute with extended options
+==== Embedded packet capture
+=== Apply troubleshooting methodologies
+==== Diagnose the root cause of networking issue (analyze symptoms, identify and describe root cause)
+==== Design and implement valid solutions according to constraints
+==== Verify and monitor resolution
+=== Interpret packet capture
+==== Using wireshark trace analyzer
+==== Using IOS embedded packet capture
+
+
+
+

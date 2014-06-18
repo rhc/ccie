@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <date>2014-04-07</date>
+</articleinfo>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="tmp__1.png"/>
+  </imageobject>
+  <textobject><phrase>tmp__1.png</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</article>

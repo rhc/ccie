@@ -1,0 +1,13 @@
+digraph ccie {
+	graph [bb="0,0,60,36",
+		rotate=0,
+		size="8,8"
+	];
+	node [label="\N",
+		style=filled
+	];
+	origin	 [height=0.5,
+		label=CCIE,
+		pos="30,18",
+		width=0.84093];
+}
